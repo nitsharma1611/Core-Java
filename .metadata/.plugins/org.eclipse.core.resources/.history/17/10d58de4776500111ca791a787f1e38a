@@ -1,0 +1,10 @@
+package com.rays.inheritance;
+
+public class TestAnimal {
+public static void main(String[] args) {
+	Dog d=new Dog();
+	d.setColor("green");
+	d.bark();
+d.eat();
+}
+}

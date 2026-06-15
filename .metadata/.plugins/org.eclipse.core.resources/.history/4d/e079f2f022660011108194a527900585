@@ -1,0 +1,11 @@
+package com.rays.constructor;
+
+public class TestAccount {
+public static void main(String[] args) {
+	Account acc=new Account(null, null, 0);
+
+
+
+
+}
+}

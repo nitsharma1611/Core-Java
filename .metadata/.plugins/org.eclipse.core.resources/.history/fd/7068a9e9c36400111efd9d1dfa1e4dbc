@@ -1,0 +1,19 @@
+package com.rays.encapsulation;
+
+public class TestAutomobile {
+	public static void main(String[] args) {
+		Automobile am = new Automobile();
+		am.setColor("Red");
+		am.setSpeed(250);
+		am.setMake("Suzuki");
+		
+		
+		System.out.println("Car color: "+am.getColor());
+		System.out.println("Car Speed: "+am.getSpeed());
+		System.out.println("Car Company Name: "+am.getMake());
+		am.breake();
+		System.out.println(am.getSpeed());
+	//am.acclerator();	
+	}
+
+}

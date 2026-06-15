@@ -1,0 +1,25 @@
+package com.rays.overridding;
+
+public class TestBank {
+	public static void main(String[] args) {
+		HDFCBank hb = new HDFCBank();
+		String name = hb.getName();
+		double hdfcRate = hb.getInterestRate();
+		System.out.println("Name: " + name + "  " + "HDFC Rate " + hdfcRate);
+		System.out.println("===================================");
+
+		ICICIBank ib = new ICICIBank();
+		String iciciName = ib.getName();
+		double iciciRate = ib.getInterestRate();
+		System.out.println("Name: " + iciciName + "  " + "ICICI Rate " + iciciRate);
+		System.out.println("===================================");
+
+		SBIBank sb = new SBIBank();
+		String sbName = sb.getName();
+		double sbRate = sb.getInterestRate();
+		System.out.println("Name: " + sbName + "  " + "SBI Rate " + sbRate);
+		System.out.println("===================================");
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.rays.inheritance;
+
+import com.rays.encapsulation.Person;
+
+public class Student extends Person{
+	private String rollNo;
+	private int marks;
+	
+	public void setRollNo(String rollNo) {
+		this.rollNo=rollNo;
+	}
+	
+	public void setMarks(int marks) {
+		this.marks=marks;
+		
+	}
+	public String getRollNO() {
+		return rollNo;
+	}
+	public int getMarks() {
+		return marks;
+	}
+}

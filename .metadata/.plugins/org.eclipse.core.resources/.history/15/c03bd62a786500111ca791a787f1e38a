@@ -1,0 +1,22 @@
+package com.rays.inheritance;
+
+public class Puppy extends Dog {
+	public void weep() {
+		System.out.println("Puppy can weep");
+	}
+
+	@Override
+	public void eat() {
+		System.out.println("Puppy can drink Milk");
+
+	}
+
+	public void bark() {
+		System.out.println("Puppy can bark");
+	}
+@Override
+	public void eat() {
+System.out.println("Puupy can drink milk");
+	}
+
+}

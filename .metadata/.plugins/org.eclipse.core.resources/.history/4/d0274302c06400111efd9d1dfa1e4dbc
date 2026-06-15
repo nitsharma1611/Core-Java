@@ -1,0 +1,28 @@
+package com.rays.encapsulation;
+
+public class TestAccount {
+	public static void main(String[] args) {
+		Account acc = new Account();
+		acc.setBankName("ICICI Bank");
+		acc.setAccountNumber("465465465852");
+		acc.setAccountType("'Saving Account'");
+		acc.setBalance(50000.00);
+		
+		System.out.println("Bank Name: " + acc.getBankName());
+		System.out.println("Account Number: " + acc.getAccountNumber());
+		System.out.println("Type: " + acc.getAccountType());
+		System.out.println("Current Balance: " + acc.getBalance());
+		acc.deposit(2500);
+		System.out.println("new Balance: "+acc.getBalance());
+		acc.withdraw(54000);
+		System.out.println("new Balance: "+acc.getBalance());
+		
+		
+		
+
+
+		
+		
+		
+	}
+}

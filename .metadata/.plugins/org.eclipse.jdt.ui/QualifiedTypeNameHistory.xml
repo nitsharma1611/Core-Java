@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.rays.constructor.Account"/>
+    <fullyQualifiedTypeName name="com.rays.constructor.Circle"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="com.rays.overridding.Shape"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="com.rays.overridding.Rectangle"/>
+    <fullyQualifiedTypeName name="com.rays.overridding.Triangle"/>
+    <fullyQualifiedTypeName name="com.rays.overridding.Circle"/>
+    <fullyQualifiedTypeName name="com.rays.overridding.HDFCBank"/>
+    <fullyQualifiedTypeName name="com.rays.overridding.ICICIBank"/>
+    <fullyQualifiedTypeName name="com.rays.overridding.SBIBank"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+</qualifiedTypeNameHistroy>

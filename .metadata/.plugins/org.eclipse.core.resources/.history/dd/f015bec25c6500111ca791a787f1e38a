@@ -1,0 +1,51 @@
+package com.rays.encapsulation;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
+public class TestPerson {
+public static void main(String[] args) throws ParseException {
+	SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+	Person p=new Person();
+	p.setName("Nitin Sharma");
+	p.setAddress("Indore");
+	
+	p.setDob(sdf.parse("1995-12-25"));
+	
+	Person p1=new Person();
+p1.setName("Ram");
+p1.setAddress("Bhopal");
+p1.setDob(sdf.parse("2009-07-15"));
+
+
+System.out.println("=====================");
+
+System.out.println(p.getName());
+System.out.println(p.getAddress());
+System.out.println(p.getDob());
+int age=p.getAge(p.getDob());
+if(age>p.AVG_AGE) {
+	System.out.println(p.getName()+" Your are enligible");
+}else {
+	System.out.println(p.getName()+" Your are not enligible");
+}
+System.out.println();
+
+System.out.println(p1.getName());
+System.out.println(p1.getAddress());
+System.out.println(p1.getDob());
+
+
+
+
+int age1=p1.getAge(p1.getDob());
+if(age1>p1.AVG_AGE) {
+	System.out.println(p1.getName()+" Your are enligible");
+}else {
+	System.out.println(p1.getName()+" Your are not enligible");
+}
+
+
+
+}
+}

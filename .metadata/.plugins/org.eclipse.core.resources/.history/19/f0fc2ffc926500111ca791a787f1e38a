@@ -1,0 +1,23 @@
+package com.rays.constructor;
+
+public class TestShape {
+public static void main(String[] args) {
+	Shape s=new Shape();
+	s.setColor("black");
+	s.setBorderWidth(2);
+	System.out.println("Color: "+s.getColor());
+	System.out.println("BorderWidth: "+s.getBorderWidth());
+	System.out.println("=========================");
+	Shape s1=new Shape("White");
+	System.out.println("S1 Color: "+s1.getColor());
+	System.out.println("=========================");
+	Shape s2=new Shape("Red", 5);
+System.out.println("S2 Color: "+s2.getColor()+" ,  "+"S2 BorderWidth: "+s2.getBorderWidth());
+Circle c=new Circle(5);
+System.out.println(c.getRadius());
+Circle c1=new Circle(5, "Red", 4);
+System.out.println(" Circle Radius "+c1.getRadius()+"Circle BorderWidth "+c1.getBorderWidth()+"Circel color"+c1.getColor());
+
+
+}
+}

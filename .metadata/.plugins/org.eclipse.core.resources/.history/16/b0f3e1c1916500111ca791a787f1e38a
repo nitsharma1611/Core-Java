@@ -1,0 +1,9 @@
+package com.rays.constructor;
+
+public class Person {
+private String name;
+private String address;
+public Person() {
+	System.out.println("this is Default Constructor");
+}
+}

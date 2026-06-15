@@ -1,0 +1,11 @@
+package com.rays.overridding;
+
+public class Bank {
+	public String getName() {
+		return "RBI ";
+	}
+
+	public final double getInterestRate() {
+		return 11.0;
+	}
+}

@@ -1,0 +1,25 @@
+package com.rays.inheritance;
+
+public class TestShape {
+	public static void main(String[] args) {
+
+		Circle c = new Circle();
+		c.setColor("Red");
+		c.setBorderWidth(2);
+c.setRadius(5);
+double area=c.area();
+System.out.println("=====================================");
+System.out.println("Circle color: "+c.getColor());
+System.out.println("Circle BorderWidth: "+c.getBorderWidth());
+System.out.println("Circle Radius: "+c.getRadius());
+System.out.println("Circle Area:  "+area);
+
+
+
+Rectangle r = new Rectangle();
+
+		Triangle t = new Triangle();
+
+	}
+
+}

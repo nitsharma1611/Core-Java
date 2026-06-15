@@ -1,0 +1,29 @@
+package com.rays.overridding;
+
+public class Circle extends Shape {
+	private int radius;
+//public static final double PI=3.14;
+	public int getRadius() {
+		return radius;
+	}
+
+	public void setRadius(int radius) {
+		this.radius = radius;
+
+	}
+
+	@Override
+	public double area() {
+		
+		return Math.PI*radius*radius;
+	}
+
+	public Circle(int radius) {
+		super();
+		this.radius = radius;
+	}
+
+
+	
+	
+}

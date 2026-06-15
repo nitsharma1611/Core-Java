@@ -1,0 +1,12 @@
+package com.rays.inheritance;
+
+public class Circle {
+private int radius;
+public int getRadius() {
+	return 0;
+	
+}
+public void setRadius(int radius) {
+	this.radius=radius;
+}
+}

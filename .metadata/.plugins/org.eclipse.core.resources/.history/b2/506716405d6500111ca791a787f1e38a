@@ -1,0 +1,54 @@
+package com.rays.encapsulation;
+
+public class Automobile {
+	private String color;
+	private int speed;
+	private String make;
+public static final int NO_OF_Gears=6;
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public void setSpeed(int speed) {
+		this.speed = speed;
+	}
+
+	public int getSpeed() {
+		return speed;
+	}
+
+	public void setMake(String make) {
+		this.make = make;
+	}
+
+	public String getMake() {
+		return make;
+	}
+
+	public void breake() {
+
+		if (speed == 0) {
+		
+			System.out.println("Car is already Stop");
+		}else {
+			speed=speed-10;
+		}
+
+	}
+
+	public void acclerator() {
+
+		if(speed>=200)  {
+			System.out.println("Appling Break");
+		}
+		else {
+			speed=speed+10;
+		}
+		
+		
+	}
+}

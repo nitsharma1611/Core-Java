@@ -1,0 +1,24 @@
+package com.rays.encapsulation;
+
+public class TestShape {
+public static void main(String[] args) {
+	Circle c=new Circle();
+	
+	
+	c.setBorderWidth(5);
+	c.setColor("Red");
+	c.setRadius(5);
+System.out.println("==============================");
+
+
+System.out.println("Circle BorderWidth: "+c.getBorderWidth());
+System.out.println("Color of Circle: "+c.getColor());
+System.out.println("Area of Circle: "+c.area());
+
+Shape s1=new Shape();
+Shape s2=new Circle();
+//Circle c3=new Shape();
+System.out.println("Area of Circle: "+s1.area());
+System.out.println("Area of Circle: "+s2.area());
+
+}}

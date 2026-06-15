@@ -1,0 +1,7 @@
+package com.rays.inheritance;
+
+public class Puppy {
+public void weep() {
+	System.out.println("Puppy can weep");
+}
+}

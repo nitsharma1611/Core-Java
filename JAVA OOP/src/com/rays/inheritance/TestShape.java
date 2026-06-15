@@ -1,0 +1,52 @@
+package com.rays.inheritance;
+
+public class TestShape {
+	public static void main(String[] args) {
+
+		Circle c = new Circle();
+		c.setColor("Red");
+		c.setBorderWidth(2);
+		c.setRadius(5);
+		double area = c.area();
+
+		System.out.println("Circle color: " + c.getColor());
+		System.out.println("Circle BorderWidth: " + c.getBorderWidth());
+		System.out.println("Circle Radius: " + c.getRadius());
+		System.out.println("Circle Area:  " + area);
+
+		System.out.println("=====================================");
+
+		Rectangle r = new Rectangle();
+		r.setColor("Blue");
+		r.setBorderWidth(3);
+		r.setLength(5);
+		r.setWidth(7);
+		double d1 = r.area();
+
+		System.out.println("Rectangle Color: " + r.getColor());
+		System.out.println("Rectangle BorderWidth: " + r.getBorderWidth());
+		System.out.println("Rectangle Length: " + r.getLength());
+		System.out.println("Rectangle Width: " + r.getWidth());
+		System.out.println("Rectangle Area:  " + d1);
+
+		System.out.println("=====================================");
+
+		Triangle t = new Triangle();
+t.setColor("Pink");
+t.setBorderWidth(4);
+t.setBase(7);
+t.setHeight(8);
+double d2=t.area();
+System.out.println("Triangle Color: "+t.getColor());
+System.out.println("Triangle BorderWidth: "+t.getBorderWidth());
+System.out.println("Triangle Base: "+t.getBase());
+System.out.println("Triangle Height: "+t.getHeight());
+System.out.println("Triangle Area: "+d2);
+
+
+
+System.out.println("=====================================");
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package com.rays.abstraction;
+
+public class TestBusinessMan {
+public static void main(String[] args) {
+	Richman r=new Businessman();
+	r.donation();
+	r.earnMoney();
+	r.party();
+	System.out.println("==========================");
+	SocialWorker s=new Businessman();
+	s.helpToOthers();
+	
+	System.out.println("==========================");
+	Businessman bs=new Businessman();
+	bs.donation();
+	bs.earnMoney();
+	bs.hashCode();
+	bs.party();
+	
+}
+}

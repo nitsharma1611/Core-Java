@@ -1,0 +1,54 @@
+package com.rays.inheritance;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
+public class TestPerson {
+public static void main(String[] args) throws ParseException {
+
+	
+	SimpleDateFormat sdf=new SimpleDateFormat("dd-MM-yy");
+	
+	
+	Businessman bus=new Businessman();
+	bus.setName("Nitin");
+	bus.setAddress("Indore");
+	bus.setDob(sdf.parse("24-06-1990"));
+	bus.setIncome(2500000.0);
+
+	System.out.println("Businessman Name : "+bus.getName());
+	System.out.println("Businessman Address : "+bus.getAddress());
+	System.out.println("Businessman Dob : "+sdf.format(bus.getDob()));
+	System.out.println("Businessman Income : "+bus.getIncome());
+	System.out.println("=====================================");
+	
+	Doctor doc=new Doctor();
+	doc.setName("Ram");
+	doc.setAddress("Bhopal");
+	doc.setDob(sdf.parse("1995-07-30"));
+	doc.setRegistrationNo("A1B2C3");
+	
+	System.out.println("Doctor Name : "+doc.getName());
+	System.out.println("Doctor Address: "+doc.getAddress());
+	System.out.println("Doctor Dob: "+doc.getDob());
+	System.out.println("Doctor RegistrationNo: "+doc.getRegistrationNo());
+	
+	System.out.println("=====================================");
+	Student st=new Student();
+st.setName("Piyush");
+st.setAddress("Khargone");
+st.setDob(sdf.parse("2005-05-20"));
+st.setRollNo("784621");
+st.setMarks(102);
+
+System.out.println("Student Name : "+st.getName());
+System.out.println("Student Address : "+st.getAddress());
+System.out.println("Student Dob: "+st.getDob());
+System.out.println("Student RollNo: "+st.getRollNO());
+System.out.println("Student Marks: "+st.getMarks());
+
+
+
+
+}
+}

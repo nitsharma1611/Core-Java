@@ -1,0 +1,20 @@
+package com.rays.exceptionhanding;
+
+public class Demo1 {
+	public static void main(String[] args) throws MistakeException {
+		dad();
+	}
+	public static void dad() throws MistakeException {
+		mom();
+	}
+
+
+	public static void mom() throws MistakeException {
+		son();
+	}
+
+	public static void son() throws MistakeException {
+	int total=5/0;	
+	System.out.println(total);
+	}
+}

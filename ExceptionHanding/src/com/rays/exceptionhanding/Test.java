@@ -1,0 +1,20 @@
+package com.rays.exceptionhanding;
+
+public class Test {
+	public static void main(String[] args) {
+		System.out.println(test());
+	}
+
+	public static int test() {
+		String name = "vijay";
+
+		try {
+			name.charAt(6);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return 10;
+		} finally {
+			return 20;
+		}
+	}
+}

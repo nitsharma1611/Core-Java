@@ -1,0 +1,16 @@
+package com.rays.exceptionhanding;
+
+import java.nio.channels.AcceptPendingException;
+
+public abstract class TestAccount {
+public static void main(String[] args) {
+	
+	Account ac=new Account();
+	ac.setBalance(1500);
+	System.out.println(ac.getBalance());
+	ac.widthdraw(200);
+	System.out.println(ac.getBalance());
+	
+	
+}
+}

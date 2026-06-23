@@ -1,0 +1,21 @@
+package com.rays.exceptionhanding;
+
+public class CustomUncheckedException {
+	public static void main(String[] args)  {
+		dad();
+	}
+	public static void dad()   {
+		mom();
+	}
+
+
+	public static void mom() {
+		son();
+	}
+
+	public static void son() {
+		InsufficientFundException e=new InsufficientFundException();
+		throw e;
+	}
+
+}

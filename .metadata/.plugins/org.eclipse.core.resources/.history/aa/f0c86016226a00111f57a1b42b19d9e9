@@ -1,0 +1,12 @@
+package com.rays.exceptionhanding;
+
+public class Demo {
+public static void main(String[] args) {
+	Throwable th=new Throwable("Something went wrong");
+	System.out.println(th.getMessage());
+	int k=0;int i=15;
+	/*
+	 * double div=i/k; System.out.println("Div :"+div);
+	 */
+}
+}

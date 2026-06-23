@@ -1,0 +1,9 @@
+package com.rays.exceptionhanding;
+
+public class Demo {
+public static void main(String[] args) {
+	int k=0;int i=15;
+	double div=i/k;
+	
+}
+}

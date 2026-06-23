@@ -1,0 +1,30 @@
+package com.rays.collectiondemo;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class Test {
+	public static void main(String[] args) {
+
+		Collection c = new ArrayList();
+
+		c.add(45);
+		c.add("Ram");
+		c.add('a');
+		c.add(4.2);
+		c.add(true);
+		System.out.println(c);
+		System.out.println("size of c: " + c.size());
+		for (Object obj : c) {
+			System.out.println(obj);
+
+		}
+System.out.println("============================");
+System.out.println(c.contains('a'));
+System.out.println(c.contains(45));
+System.out.println("----------------");
+System.out.println(c.remove('a'));
+System.out.println(c.contains('a'));
+
+	}
+}

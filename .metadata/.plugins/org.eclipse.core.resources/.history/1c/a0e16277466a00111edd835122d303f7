@@ -1,0 +1,26 @@
+package com.rays.exceptionhanding;
+
+public class Demo {
+	public static void main(String[] args) throws ClassCastException {
+
+		System.out.println("Before Exception");
+
+		int k = 0;
+		int i = 15;
+		try {
+
+			double div = i / k;
+			System.out.println("Div :" + div);
+			System.out.println("After Exception");
+		} catch (ArithmeticException e) {
+			e.printStackTrace();
+			System.out.println(e);
+		} catch (Exception e) {
+			System.out.println(" Exceptions" + e);
+		} finally {
+			System.out.println("Finnly block ");
+		}
+		System.out.println("After Exception");
+
+	}
+}

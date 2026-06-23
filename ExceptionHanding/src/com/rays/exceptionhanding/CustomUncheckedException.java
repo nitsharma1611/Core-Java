@@ -1,0 +1,33 @@
+package com.rays.exceptionhanding;
+
+public class CustomUncheckedException {
+	public static void main(String[] args) {
+		System.out.println("F");
+		dad();
+		System.out.println("G");
+	}
+
+	public static void dad() {
+
+		try {
+			mom();
+			System.out.println("D");
+		} catch (Exception e) {
+			System.out.println("E");
+			e.printStackTrace();
+		}
+	}
+
+	public static void mom() {
+		System.out.println("b");
+		son();
+		System.out.println("C");
+	}
+
+	public static void son() {
+System.out.println("a");
+		throw new InsufficientFundException();
+		
+	}
+
+}

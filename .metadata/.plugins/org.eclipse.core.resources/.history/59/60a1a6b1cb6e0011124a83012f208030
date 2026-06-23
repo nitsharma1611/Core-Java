@@ -1,0 +1,42 @@
+package com.rays.colllection.set;
+
+
+
+import java.util.HashSet;
+
+import java.util.Set;
+
+public class Test {
+public static void main(String[] args) {
+	Set list = new HashSet();
+
+	list.add(45);
+	list.add("Ram");
+	list.add('a');
+	list.add(4.2);
+	list.add(true);
+	System.out.println(list);
+	System.out.println("size of list: " + list.size());
+	for (Object obj : list) {
+		System.out.println(obj);
+
+	}
+	System.out.println("============================");
+	System.out.println(list.contains('a'));
+	System.out.println(list.contains(45));
+	System.out.println("----------------");
+	System.out.println(list.remove('a'));
+	System.out.println(list.contains('a'));
+	System.out.println(list);
+	System.out.println("size of list: " + list.size());
+	System.out.println("------------------");
+	System.out.println(list.isEmpty());
+	
+	list.clear();
+	System.out.println(list.isEmpty());
+	System.out.println(list);
+	System.out.println("size of list: " + list.size());
+
+}
+}
+

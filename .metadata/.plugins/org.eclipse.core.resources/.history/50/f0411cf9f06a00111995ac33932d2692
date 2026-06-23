@@ -1,0 +1,15 @@
+package com.rays.exceptionhanding;
+
+public class Test {
+public static void main(String[] args) {
+	String name="vijay";
+	
+	try {
+		name.charAt(6);
+	} catch (Exception e) {
+		
+	}finally {
+		
+	}
+}
+}

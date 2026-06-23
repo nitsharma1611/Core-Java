@@ -1,0 +1,11 @@
+package com.rays.collectiondemo;
+
+import java.util.ArrayList;
+
+public class Demo {
+	public static void main(String[] args) {
+
+		ArrayList c = new ArrayList();
+c.add("");
+	}
+}

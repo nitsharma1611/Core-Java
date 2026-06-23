@@ -1,0 +1,23 @@
+package com.rays.collection.list;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TestArrayList {
+	public static void main(String[] args) {
+		List list = new ArrayList();
+
+		list.add(0,"ram");
+		list.add(1,'a');
+		list.add(2, 5);
+		list.add(3, 3.5);
+		list.add(4, true);
+
+		list.add("sita");
+		list.add('b');
+		list.add(10);
+		list.add(15.5);
+
+	System.out.println(list);	
+	}
+}
